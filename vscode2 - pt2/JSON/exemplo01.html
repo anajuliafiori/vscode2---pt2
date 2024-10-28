@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Criando um Objeto</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h2>Criando JSON String</h2>
+    <p id="demo"></p>
+
+    <script>
+        const jsonString = `{
+        "alunos": [
+        {"firstName": "John", "lastName": "Travolta"},
+        {"firstName": "Anne", "lastName": "Hathway"},
+        {"firstName": "Peter", "lastName": "Parker"}
+        ]}`
+
+        const jsonObject = JSON.parse(jsonString);
+        const alunoArray = jsonObject.alunos[1];
+        const fullName = alunoArray.firstName + " " + alunoArray.lastName; 
+        document.getElementById("demo").textContent = fullName;
+    </script>
+</body>
+</html>

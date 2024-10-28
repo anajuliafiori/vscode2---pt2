@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>SuperAçaiajin</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/_css/acai.css'>
+</head>
+<body>
+    <h1>FORMULÁRIO SUPERAÇAIAJIN</h1> 
+
+    <form id="form" method="get" action="action_pagee.html">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <label for="name">Nome:</label><br><br>
+            <input class="form1" id="nome" type="text" required><br><br>
+            <label for="idade">Idade:</label><br><br>
+            <input class="form1" id="idade" type="number"  min="10" max="65" name="age" required><br><br>
+            <label for="tel">Telefone:</label><br><br>
+            <input class="form1" id="telefone" type="tel" required><br><br>
+            <label for="ende">Endereço:</label><br><br>
+            <input class="form1" id="endereco" type="text" name="address" required><br><br>
+            <label for="planet">Planeta de Origem:</label><br><br>
+            <select id="planeta" required>
+                <option>Selecione o planeta de origem</option>
+                <option>Planeta Terra</option>
+                <option>Planeta Vegeta</option>
+                <option>Namekusei</option>
+                <option>Nova Namekusei</option>
+                <option>Estrela Gete</option>
+                <option>Reino dos Demônios</option>
+                <option>Planeta Meat</option>
+                <option>Coola No. 256</option>
+            </select>
+        </fieldset><br>
+        <fieldset>
+            <legend>Dados extras</legend>
+            <label for="uni">Raça do Universo 7 preferida:</label>
+            <select id="universo" required>
+                <option>Selecione a raça</option>
+                <option>Androide</option>
+                <option>Animal</option>
+                <option>Dragão</option>
+                <option>Terráqueo</option>
+                <option>Saiyajin</option>
+                <option>Majin</option>
+                <option>Namekuseijin</option>
+                <option>Ogro</option>
+                <option>Raça do Freeza</option>
+            </select><br><br>
+            <label for="trabalho">Trabalho:</label>
+            <input type="radio" id="trab" name="trabalho" value="Autônomo"/>
+            <label for="auto">Autônomo</label>
+            <input type="radio" id="trab" name="trabalho" value="Empregado clt"/>
+            <label for="clt">Empregado CLT</label>
+            <input type="radio" id="trab" name="trabalho" value="Empresário"/>
+            <label for="empres">Empresário</label>
+            <input type="radio" id="trab" name="trabalho" value="Tipo Goku"/>
+            <label for="goku">Tipo Goku</label>
+        </fieldset><br>
+        <fieldset>
+            <legend>Seu açaí é perfeito de que jeito?</legend>
+            <input type="checkbox"  id="puro" name="acai" value="Puro"/>
+            <label for="puro">Puro</label>
+            <input type="checkbox"  id="banana" name="acai" value="Com banana"/>
+            <label for="banana">Com banana</label>
+            <input type="checkbox"  id="mor" name="acai" value=" Com morango"/>
+            <label for="mor">Com morango</label>
+            <input type="checkbox"  id="gra" name="acai" value="Com granola"/>
+            <label for="gra">Com granola</label>
+            <input type="checkbox"  id="terra" name="acai" value="Tem gosto de terra"/>
+            <label for="terra">Tem gosto de terra</label><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Qual o tamanho preferido?</legend>
+            <input type="radio" id="500" name="tam" value="500ml"/>
+            <label for="500">500 ml</label>
+            <input type="radio" id="300" name="tam" value="300ml"/>
+            <label for="300">300 ml</label>
+            <input type="radio" id="100" name="tam" value="100ml"/>
+            <label for="100">100 ml</label>
+            <input type="radio" id="casq" name="tam" value="casquinha"/>
+            <label for="casq">Casquinha</label>
+            <input type="radio" id="terra" name="tam" value="terra"/>
+            <label for="terra">Qual a parte do gosto de terra você não entendeu? </label>
+        </fieldset><br>
+        <fieldset>
+            <h4>Observações:</h4>
+            <textarea id="text" rows="7" cols="150">Escreva suas observações: Eu gosto de açaí porque...</textarea>
+        </fieldset><br>
+        <input type="submit" id="envio" value="ENVIAR"/>
+        <input type="reset" id="envio" value="LIMPAR"/>
+        <input type="submit" id="envio" onclick="json()" value="Gerar JSON">
+    </form>
+
+    <script src='/_javascript/acai.js'></script>
+</body>
+</html>

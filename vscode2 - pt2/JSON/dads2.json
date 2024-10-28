@@ -1,0 +1,25 @@
+{
+    "pessoas": [
+        {
+            "nome": "José Silva",
+            "idade": 27,
+            "endereço": "Rua: Voorhees",
+            "cidade": "Mirassol",
+            "filhos": ["Joana", "João"]
+        },
+        {
+            "nome": "Antonio Prado",
+            "idade": 50,
+            "endereço": "Rua: Friday",
+            "cidade": "Lorena",
+            "filhos": ["Mauricio"]
+        },
+        {
+            "nome": "Geisa Pereira",
+            "idade": 30,
+            "endereço": "Rua: LastDream",
+            "cidade": "São Paulo",
+            "filhos": ["Thiago"]
+        }
+    ]
+}

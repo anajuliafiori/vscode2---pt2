@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+    text-align: center;
+}
+
+div {
+    background-color: white;
+    border-radius: 10px;
+    width: 40%;
+    margin-left: 30%;
+}
+
+select {
+    border-radius: 90px;
+    padding: 5px;
+}
+
+.espaco {
+    border-radius: 90px;
+    border: 0.5px solid black;
+    padding: 5px;
+}
+
+.button{
+    padding: 10px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 90px;
+    width: 150px;
+}
+
+#nome {
+    width: 60%;
+}
+
+#email {
+    width: 60%;
+}
+
+#conta {
+    width: 25%;
+}
+
+#grupo {
+    width: 38%;
+}
+
+#senha {
+    width: 60%;
+}
+
+#confirmarsenha {
+    width: 43%;
+}

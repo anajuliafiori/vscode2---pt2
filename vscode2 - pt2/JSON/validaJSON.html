@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Exemplo de JSON</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>Dados do Usuário</h1>
+    <p id="nome1"></p>
+    <p id="nome2"></p>
+    <p id="nome3"></p>
+    <p id="filhos"></p>
+
+    <script>
+        fetch("dads2.json")
+        .then(response => response.json())
+        .then(ex01 => {
+
+            document.querySelector("#nome1").textContent = " Nome:" + ex01.pessoas[0].nome + " Idade:" +  ex01.pessoas[0].idade;
+            document.querySelector("#nome2").textContent = " Nome:" + ex01.pessoas[1].nome + " Idade:" + ex01.pessoas[1].idade;
+            document.querySelector("#nome3").textContent = " Nome:" + ex01.pessoas[2].nome + " Idade:" + ex01.pessoas[2].idade;
+            document.querySelector("#filhos").textContent = "filhos:" + ex01.filhos.join(", ");
+        });
+    </script>
+</body>
+</html>

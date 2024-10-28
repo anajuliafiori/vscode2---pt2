@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Fiori Farm</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script>
+        var seg = prompt("Insira a produção de Segunda-Feira: ");
+        var ter = prompt("Insira a produção de Terça-Feira: ");
+        var qua = prompt("Insira a produção de Quarta-Feira: ");
+
+        seg = parseInt(seg);
+        ter = parseInt(ter);
+        qua = parseInt(qua);
+        total = seg + ter + qua 
+        document.write("O total das produções foi de: ", total);
+
+        queda = ter - qua 
+        document.write("<br>A queda das produções foi de: ", queda);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

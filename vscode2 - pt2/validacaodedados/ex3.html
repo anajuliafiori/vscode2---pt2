@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Cadastro de Filmes e Séries</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/_css/ex3.css'>
+    <script src='/_javascript/ex3.js'></script>
+</head>
+<body>
+    <h1>Cadastro de Filmes e Séries</h1>
+    <div>
+        <br>
+    <form action="action_pageex3.html" onsubmit="return validarFormulario()">
+        <label for="title">Título:</label>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="produtor">Produtor:</label>
+        <input type="text" id="produtor" name="produtor" required><br><br>
+
+        <label for="codigo">Código:</label>
+        <input type="text" id="codigo" name="codigo" required><br><br>
+
+        <label for="ano">Ano de Lançamento:</label>
+        <input type="number" id="ano" name="ano" required><br><br>
+
+        <label for="ano">Gênero:</label>
+        <select name="tipos" required>
+            <option selected>Selecionar</option>
+            <option >Ação</option>
+            <option >Aventura</option>
+            <option >Terror</option>
+            <option >Suspense</option>
+            <option >Comédia</option>
+            <option >Romance</option>
+          </select><br><br>
+
+          <label for="classifica">Classificação:</label>
+        <input type="text" id="classe" name="classe" required><br><br>
+
+        <label for="tempo">Duração:</label>
+        <input type="time" id="tempo" name="tempo" required><br><br>
+
+        <label for="coment">Comentários:</label>
+        <input type="text" id="coment" name="coment" required><br><br>
+    </div>
+    <br>
+        <input class="button" type="submit" value="Enviar">
+</body>
+</html>
